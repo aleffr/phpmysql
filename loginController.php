@@ -3,9 +3,6 @@ session_start();
 
 include "config/banco.php";
 
-$validarUsuario = "admin";
-$validarSenha = "admin123";
-
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $login = $_POST["usuario"];
@@ -14,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $usuario = buscarUsuario($conexao,$login,$senha);
 
     if ($usuario){
-        
+        $_SESSION["usuario"] = $usuario["login"];
         header("Location: menu.php");
         exit();
     }

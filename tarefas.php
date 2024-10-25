@@ -85,7 +85,7 @@ include "banco.php";
                                     <?php if($tarefa['fl_concluida']){
                                          echo "<b>Finalizada</b>";
                                     }else{ ?>
-                                        <a href="<?php echo ?>">Finalizar</a></td>
+                                        <a href="<?php echo ""?>">Finalizar</a></td>
                                     <?php } ?>
                             
                             
