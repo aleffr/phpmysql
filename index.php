@@ -2,7 +2,7 @@
 
 $pageTarget = "login.php";
 
-header("Location:".$page);
+header("Location:".$pageTarget);
 exit();
 
 ?>
