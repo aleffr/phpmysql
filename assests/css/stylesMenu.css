@@ -10,17 +10,19 @@ body {
 }
 
 header {
-    background-color: #618ac7;
+    background-color: #2b3844;
     box-shadow: 1px 2px 4px #000000;
-    color: #fff;
+    color: #ffffff;
     padding: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo h1 {
+.logo h1 a {
     font-size: 24px;
+    text-decoration: none;
+    color: white;
 }
 
 nav {
@@ -50,10 +52,8 @@ nav ul li a:hover {
     color: #daff0a;
 }
 
-h4 {
-    margin-left: 100px;
-}
+
 
 section {
-    padding: 20px;
+    padding: 100px;
 }

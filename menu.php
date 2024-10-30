@@ -14,13 +14,13 @@ if (!isset($_SESSION["usuario"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="assests/css/styleMenu.css">
+    <link rel="stylesheet" href="assests/css/stylesMenu.css"/>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <h1>Logo</h1>
+            <h1><a href="menu.php">Logo</a></h1>
         </div>
         <nav>
             <ul>
@@ -28,9 +28,10 @@ if (!isset($_SESSION["usuario"])) {
                 <li><a href="cadastroUsuario.php">Cadastrar Usuário</a></li>
                 <li><a href="editarContatos.php">Editar Contatos</a></li>
             </ul>
-            <h4>Bem-vindo <strong><?php echo $_SESSION["usuario"]; ?></strong></h4>
         </nav>
+        <h4>Bem-vindo <strong><?php echo $_SESSION["usuario"]; ?></strong></h4>
     </header>
+    <div></div>
 </body>
 
 </html>
